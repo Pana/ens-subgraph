@@ -8,10 +8,12 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ENSRegistry
-    network: mainnet
+    network: espacetest
     source:
-      address: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+      # address: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+      address: '0xC7b7224F76dD98bE23b717668d55cB40E9B3DF7f'
       abi: EnsRegistry
+      startBlock: 72018275
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -35,10 +37,11 @@ dataSources:
           handler: handleNewTTL
   - kind: ethereum/contract
     name: ENSRegistryOld
-    network: mainnet
+    network: espacetest
     source:
-      address: '0x314159265dd8dbb310642f98f50c066173c1259b'
+      address: '0xA886f849c2EC963Bcfd5D34F1A15ee3fF6B2A2f3'
       abi: EnsRegistry
+      startBlock: 72018275
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -62,7 +65,7 @@ dataSources:
           handler: handleNewTTLOldRegistry
   - kind: ethereum/contract
     name: Resolver
-    network: mainnet
+    network: espacetest
     source:
       abi: Resolver
     mapping:
@@ -106,10 +109,11 @@ dataSources:
           handler: handleTextChanged
   - kind: ethereum/contract
     name: BaseRegistrar
-    network: mainnet
+    network: espacetest
     source:
-      address: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85'
+      address: '0x97c7Ee0d240f36a08f22BE6a9f4f076dB49AFE6f'
       abi: BaseRegistrar
+      startBlock: 72018275
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -132,10 +136,11 @@ dataSources:
           handler: handleNameTransferred
   - kind: ethereum/contract
     name: EthRegistrarController
-    network: mainnet
+    network: espacetest
     source:
-      address: '0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5'
+      address: '0x5fC75700E7ef0dF96D0BBf55b251ca640611786F'
       abi: EthRegistrarController
+      startBlock: 72018275
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
