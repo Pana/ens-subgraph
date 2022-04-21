@@ -60,7 +60,8 @@ function _handleNewOwner(event: NewOwnerEvent, isMigrated: boolean): void {
 
   if(domain.name == null) {
     // Get label and node names
-    let label = ens.nameByHash(event.params.label.toHexString())
+    // let label = ens.nameByHash(event.params.label.toHexString())
+    let label: string | null = null;
     if (label != null) {
       domain.labelName = label
     }

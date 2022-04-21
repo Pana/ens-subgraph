@@ -68,6 +68,7 @@ dataSources:
     network: espacetest
     source:
       abi: Resolver
+      startBlock: 72018275
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
